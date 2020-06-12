@@ -7,7 +7,7 @@ RUN apt-get -y install software-properties-common dbus-x11 kdenlive vlc breeze-g
 
 # install icon
 RUN \
-    APP_ICON_URL=https://raw.githubusercontent.com/TessyPowder/kdenlive-docker/master/kdenlive-logo.png && \
+    APP_ICON_URL=https://raw.githubusercontent.com/TessyPowder/kdenlive-docker/master/img/kdenlive-logo.png && \
     install_app_icon.sh "$APP_ICON_URL"
 
 # Copy the start script.
