@@ -17,6 +17,6 @@ docker run -p 5800:5800 -p 5900:5900 -v '/pathToFolderOnHost/':'/sharedContent':
 Then you can acces [Kdenlive](https://github.com/KDE/kdenlive) it via http on port 5800 or vnc at port 5900
 
 # Screenshot:
-![](https://raw.githubusercontent.com/TessyPowder/kdenlive-vnc-docker/master/img/screenshot.png)
+![](https://raw.githubusercontent.com/JonathanTreffler/kdenlive-vnc-docker/master/img/screenshot.png)
 
 *This image is based on the gui baseimage of [@jlesage](https://github.com/jlesage/)*
