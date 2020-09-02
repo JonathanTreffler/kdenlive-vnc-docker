@@ -7,7 +7,7 @@ RUN apt-get -y install software-properties-common dbus-x11 kdenlive vlc breeze-g
 
 # install icon
 RUN \
-    APP_ICON_URL=https://raw.githubusercontent.com/TessyPowder/kdenlive-docker/master/img/kdenlive-logo.png && \
+    APP_ICON_URL=https://raw.githubusercontent.com/JonathanTreffler/kdenlive-docker/master/img/kdenlive-logo.png && \
     install_app_icon.sh "$APP_ICON_URL"
 
 # Copy the start script.
@@ -21,5 +21,5 @@ LABEL \
       org.label-schema.name="kdenlive" \
       org.label-schema.description="Docker container for Kdenlive" \
       org.label-schema.version="1.1" \
-      org.label-schema.vcs-url="https://github.com/TessyPowder/kdenlive-vnc-docker" \
+      org.label-schema.vcs-url="https://github.com/JonathanTreffler/kdenlive-vnc-docker" \
       org.label-schema.schema-version="1.0"
