@@ -1,14 +1,18 @@
 # Pull base image.
-FROM jlesage/baseimage-gui:ubuntu-18.04
+FROM jlesage/baseimage-gui:debian-10
 
 # install kdenlive
 RUN apt update
-RUN apt-get -y install software-properties-common dbus-x11 kdenlive vlc breeze-gtk-theme
+RUN apt-get -y install software-properties-common dbus-x11 flatpak
+
+RUN flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+RUN flatpak install -y flathub org.kde.kdenlive
 
 # install icon
-RUN \
-    APP_ICON_URL=https://raw.githubusercontent.com/JonathanTreffler/kdenlive-docker/master/img/kdenlive-logo.png && \
-    install_app_icon.sh "$APP_ICON_URL"
+#RUN \
+#    APP_ICON_URL=https://raw.githubusercontent.com/JonathanTreffler/kdenlive-docker/master/img/kdenlive-logo.png && \
+#    install_app_icon.sh "$APP_ICON_URL"
 
 # Copy the start script.
 COPY startapp.sh /startapp.sh
