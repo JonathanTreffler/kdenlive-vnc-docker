@@ -1,7 +1,7 @@
 ![GitHub](https://img.shields.io/github/license/JonathanTreffler/kdenlive-vnc-docker?style=flat-square)
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/tessypowder/docker-kdenlive?style=flat-square)](https://hub.docker.com/repository/docker/tessypowder/docker-kdenlive)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/tessypowder/docker-kdenlive?style=flat-square)](https://hub.docker.com/repository/docker/tessypowder/docker-kdenlive)
-![Maintenance](https://img.shields.io/maintenance/yes/2020?style=flat-square)
+![Maintenance](https://img.shields.io/maintenance/yes/2022?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/JonathanTreffler/kdenlive-vnc-docker?style=flat-square)
 
 # Run with:
